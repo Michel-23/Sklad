@@ -6,15 +6,20 @@ class Apple: protected fructs{
 private:
 
 public:
-    Apple() = delete;
+    Apple(){
+        _size = 5 + rand()%10;
+        _weight = 100 + rand()%50;
+        _color = static_cast<Color> (rand()%3);
+        _status = true;
+    }
 
     Apple(double size, double weight, Color color){
         _size = size;
         _weight = weight;
-        _color = static_cast<Color>(rand()%3);
-        _status = true;
+        _color = color;
+        _status = _status;        
     }
 
 
-
+    
 };
